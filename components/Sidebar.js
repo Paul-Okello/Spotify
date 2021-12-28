@@ -71,10 +71,3 @@ const Sidebar = () => {
 };
 
 export default Sidebar;
-
-export async function getServerSideProps(context) {
-  const session = await getSession(context);
-  return {
-    props: { session },
-  };
-}

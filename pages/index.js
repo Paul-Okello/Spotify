@@ -4,7 +4,8 @@ import Center from "../components/Center";
 import Player from "../components/Player";
 import Sidebar from "../components/Sidebar";
 
-export default function Home() {
+export default function Home({ session }) {
+  console.log(session);
   return (
     <div className='bg-black h-screen overflow-hidden '>
       <Head>
